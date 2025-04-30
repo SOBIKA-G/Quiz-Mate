@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+}
+
+/* Popup Window Styling */
+body {
+  width: 500px;  /* Adjusted for Chrome extension size */
+  height: 600px; 
+  background: #4F0341; /* Dark background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Header */
+img{
+  border-radius: 50%;
+  height: 256px;
+  width: 256px;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+/* Extract Button */
+#extract-btn {
+  /*background: linear-gradient(to right, #ff416c, #ff4b2b);*/
+  background: #ffc7e2;
+  color: #4F0341;
+}
+
+/* Generate Quiz Button */
+#generate-quiz {
+  /*background: linear-gradient(to right, #1d976c, #93f9b9);*/
+  background: #ffc7e2;
+  color: #4F0341;
+}
+
+/* Hover Effect */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Quiz Box Tyrian purple (#4F0341), white (#FFFFFF)
+Pale blue (#EFFAFD), royal blue (#4A8BDF), eggplant (#A0006D)
+Dark classic blue (#0A1828), turquoise (#178582), gold (#BFA181)*/
+#quiz {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+#quiz-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#quiz-popup-overlay h1 {
+  color: #4F0341;
+  text-align: center;
+}
+
+#quiz-popup-overlay button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#quiz-popup-overlay button:first-child {
+  background-color: #41886c;
+  color: white;
+}
+
+#quiz-popup-overlay button:last-child {
+  background-color: #AF1740;
+  color: white;
+  margin-left: 10px;
+}
+
+progress {
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
